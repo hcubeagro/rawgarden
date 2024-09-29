@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Buy Coconut Sugar for Rs 140/- from HCube Agro Pvt. Ltd. Free delivery available. Order now through WhatsApp.">
+  <meta name="keywords" content="Coconut Sugar, Buy Coconut Sugar, HCube Agro, Organic Sugar, WhatsApp Order, Free Delivery">
+  <title>Buy Coconut Sugar - Rs 140/-</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #d4e9d3;
+      color: #2b2b2b;
+      text-align: center;
+    }
+
+    .slider-container {
+      position: relative;
+      width: 100%;
+      max-width: 800px;
+      margin: 20px auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      height: 400px; /* Set a fixed height */
+    }
+
+    .slides {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .slides img {
+      position: absolute; /* Stack the images */
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain; /* Maintain the aspect ratio and avoid stretching */
+      opacity: 0; /* Initially, all images are invisible */
+      transition: opacity 1s ease-in-out; /* Smooth transition */
+      z-index: 1; /* Make sure all images are behind the active one */
+    }
+
+    .slides img.active {
+      opacity: 1; /* Only the active image is visible */
+      z-index: 2; /* Active image comes to the front */
+    }
+
+    .price {
+      font-size: 1.8em;
+      color: #ff5722;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    .delivery {
+      font-size: 1.5em;
+      color: #4CAF50;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .order-section {
+      margin: 40px 0;
+    }
+
+    .whatsapp-btn {
+      background-color: #25d366;
+      color: white;
+      padding: 12px 35px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.2em;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .whatsapp-btn:hover {
+      background-color: #20b857;
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 1em;
+      color: #555;
+      padding: 20px 0;
+      background-color: #f0f0f0;
+    }
+
+    /* Responsive styles for mobile screens */
+    @media (max-width: 600px) {
+      .price {
+        font-size: 1.5em;
+      }
+      .delivery {
+        font-size: 1.2em;
+      }
+      .whatsapp-btn {
+        padding: 10px 25px;
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Image Slider -->
+  <div class="slider-container">
+    <div class="slides">
+      <!-- First Image -->
+      <img src="https://i.ibb.co/sFq0977/Coc-o-nut-sugar.jpg" alt="Coconut Sugar Packaging" class="active">
+      <!-- Second Image -->
+      <img src="https://i.ibb.co/mzt9V38/Coc-o-nut-sugar-1.jpg" alt="Coconut Sugar Product">
+    </div>
+  </div>
+
+  <!-- Price and Delivery Information -->
+  <h2 class="price">Only Rs 140/-</h2>
+  <h3 class="delivery">Free Delivery</h3>
+
+  <!-- Order Section -->
+  <div class="order-section">
+    <a class="whatsapp-btn" href="https://wa.me/919193064000?text=Hello%2C%20I%20would%20like%20to%20order%20Coconut%20Sugar%20for%20Rs%20140" target="_blank" rel="noopener">Order Now</a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    Copyright &copy; HCube Agro Pvt. Ltd
+  </footer>
+
+  <!-- JavaScript for Image Fade Effect -->
+  <script>
+    const slides = document.querySelectorAll('.slides img');
+    let currentIndex = 0;
+
+    function showNextImage() {
+      // Hide the current image
+      slides[currentIndex].classList.remove('active');
+
+      // Move to the next image, loop back to the first one
+      currentIndex = (currentIndex + 1) % slides.length;
+
+      // Show the next image
+      slides[currentIndex].classList.add('active');
+    }
+
+    // Automatically switch images every 3 seconds
+    setInterval(showNextImage, 3000); // 3-second interval
+  </script>
+
+</body>
+</html>
